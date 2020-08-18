@@ -5,7 +5,6 @@ import NavBar from "./components/Navbar";
 import Header from "./components/Header";
 import './App.css';
 import "./components/ImageCard.css";
-import background from "./images/background.png";
 
 //function to shuffle array
 const shuffleArray = (array) => {
@@ -30,6 +29,7 @@ class App extends Component {
     gameOver: false
   }
 
+  //right when user loads the page, this will appear
   componentDidMount(){
     this.setState({result: "Click on a doodle to get started"})
   }
@@ -90,7 +90,7 @@ class App extends Component {
 
   render(){
     return (
-      <div className = "mainApp" styles = {{backgroundImage: `url(${background})`}}>
+      <div className = "mainApp">
       <div className="container">
          <NavBar topScore={this.state.topScore} currentScore={this.state.currentScore}/>
          <Header status = {this.state.result}/>

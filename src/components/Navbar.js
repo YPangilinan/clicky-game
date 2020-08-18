@@ -3,10 +3,11 @@ import React from "react";
 const style = {
   bgDark: {
     backgroundColor: '#0000',
-    padding: 20,
+    padding: 3,
     float: "right",
     fontSize: 20,
-    marginBottom: 0
+    marginBottom: 0,
+    marginTop: 3
   }
 }
 

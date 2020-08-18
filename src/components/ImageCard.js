@@ -1,4 +1,5 @@
 import React from "react";
+import { fadeIn } from 'react-animations';
 
 function ImageCard(props){
     return(

@@ -31,7 +31,7 @@ class App extends Component {
 
   //right when user loads the page, this will appear
   componentDidMount(){
-    this.setState({result: "Click on a doodle to get started"})
+    this.setState({result: "Homework #15"})
   }
 
   clickedPlayer = (id) => {

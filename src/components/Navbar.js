@@ -1,4 +1,5 @@
 import React from "react";
+import tallyMarks from 'tally-marks';
 
 const style = {
   bgDark: {
@@ -19,7 +20,7 @@ const NavBar = props => (
   <header style={style.bgDark} className="alight-right w-100 mb-0">
       <p style = {headerStyle}>Yssabel Pangilinan<br/> Web Development 1st Period <br/> 08/18/2020</p>
     <nav className="f6 fw6 ttu tracked">
-      <p style = {style.bgDark} className="link dim white dib mr3" title="Store"><b>Score:</b> {props.currentScore}  |  <b>Top Score:</b> {props.topScore}</p>
+      <p style = {style.bgDark} className="link dim white dib mr3" title="Store"><b>Score:</b> {tallyMarks(props.currentScore)}  <br/>  <b>Top Score:</b> {tallyMarks(props.topScore)}</p>
     </nav>
   </header>
 )

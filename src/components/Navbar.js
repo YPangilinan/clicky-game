@@ -25,8 +25,8 @@ const NavBar = props => (
       <p style = {headerStyle}>Yssabel Pangilinan<br/> Web Development 1st Period <br/> 08/18/2020</p>
     <nav className="f6 fw6 ttu tracked">
       <p style = {style.bgDark} className="link dim white dib mr3" title="Store">
-          <b>Score:</b> {tallyMarks(props.currentScore)}  <br/>  
-          <b>Top Score:</b> {tallyMarks(props.topScore)} <br/> 
+          <b>Credit Earned:</b> {tallyMarks(props.currentScore)}  <br/>  
+          <b>Max Credit:</b> {tallyMarks(props.topScore)} <br/> 
           <b>Grade:<img alt = "grade" style = {imageStyle} src = {props.grade}/></b> </p>
     </nav>
   </header>

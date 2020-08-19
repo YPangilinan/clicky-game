@@ -52,7 +52,7 @@ class App extends Component {
     let score = this.state.currentScore + 1;
     if(score === this.state.images.length){
       this.setState({
-        result: "You win!",
+        result: "You got the A+!",
         topScore: score,
         grade: highGrade,
         currentScore: 0,
@@ -64,13 +64,13 @@ class App extends Component {
       this.setState({
         topScore: score,
         currentScore: score,
-        result: "New Top Score!",
+        result: "Max Extra Credit!",
         grade: highGrade
       });
     } else {
       this.setState({
         currentScore: score,
-        result: "Correct!"
+        result: "On your way to an A!"
       });
     }
     this.resetIconArray();
@@ -81,7 +81,7 @@ class App extends Component {
       points: 0,
       currentScore: 0,
       topScore: this.state.topScore,
-      result: "You lost! Try Again.",
+      result: "You failed! Try Again.",
       grade: lowGrade,
       clicked: [],
       images,

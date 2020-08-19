@@ -1,5 +1,10 @@
 import React from 'react';
 
+const styleDoodle = {
+    textAlign: "center",
+    marginTop: 0
+}
+
 export default function Header(props) {
     return (
         <div className="row">
@@ -16,7 +21,3 @@ export default function Header(props) {
     )
 }
 
-const styleDoodle = {
-    textAlign: "center",
-    marginTop: 0
-}

@@ -64,7 +64,7 @@ class App extends Component {
       this.setState({
         topScore: score,
         currentScore: score,
-        result: "Max Extra Credit!",
+        result: "New Max Extra Credit!",
         grade: highGrade
       });
     } else {
@@ -92,7 +92,8 @@ class App extends Component {
 
   resetIconArray = () => {
     let newArray = shuffleArray(images);
-    this.setState({ images: newArray })
+    this.setState({
+      images: newArray })
   }
 
   render(){
@@ -108,6 +109,7 @@ class App extends Component {
         key = {images.id}
         image = {images.image}
         clickedPlayer = {this.clickedPlayer}
+        gameOver = {this.state.gameOver}
          />
         ))}
         </div>

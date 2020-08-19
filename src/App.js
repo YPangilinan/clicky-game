@@ -3,6 +3,9 @@ import images from "./doodles.json";
 import ImageCard from "./components/ImageCard";
 import NavBar from "./components/Navbar";
 import Header from "./components/Header";
+import normalGrade from "./images/c.png";
+import highGrade from "./images/a+.png";
+import lowGrade from "./images/f.png";
 import './App.css';
 import "./components/ImageCard.css";
 
@@ -26,6 +29,7 @@ class App extends Component {
     topScore: 0,
     result: "",
     clicked: [],
+    grade: normalGrade,
     gameOver: false
   }
 
@@ -50,6 +54,7 @@ class App extends Component {
       this.setState({
         result: "You win!",
         topScore: score,
+        grade: highGrade,
         currentScore: 0,
         clicked: [],
         images,
@@ -59,7 +64,8 @@ class App extends Component {
       this.setState({
         topScore: score,
         currentScore: score,
-        result: "New Top Score!"
+        result: "New Top Score!",
+        grade: highGrade
       });
     } else {
       this.setState({
@@ -76,6 +82,7 @@ class App extends Component {
       currentScore: 0,
       topScore: this.state.topScore,
       result: "You lost! Try Again.",
+      grade: lowGrade,
       clicked: [],
       images,
       gameOver: true
@@ -92,7 +99,7 @@ class App extends Component {
     return (
       <div className = "mainApp">
       <div className="container">
-         <NavBar topScore={this.state.topScore} currentScore={this.state.currentScore}/>
+         <NavBar topScore={this.state.topScore} currentScore={this.state.currentScore} grade = {this.state.grade}/>
          <Header status = {this.state.result}/>
          <div className = 'main'>
         {this.state.images.map(images => (

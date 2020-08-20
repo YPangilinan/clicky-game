@@ -90,6 +90,7 @@ class App extends Component {
     this.resetIconArray();
   }
 
+  //function for resetting icon array
   resetIconArray = () => {
     let newArray = shuffleArray(images);
     this.setState({

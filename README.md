@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to Doodle Click!
 
-## Available Scripts
+Doodle Click is a memory game created with React. On your homework assignment, you received a C! But no worry! You are given the opportunity to redeem your grade by earning extra credit points with this game. In order to earn extra credit, you will need to click on a doodle to earn points. But the catch is, if you click on a doodle twice, you lose all your extra credit points and your C, and end up with an F! The choice is yours! Do you trust your memory to get you an A?
 
-In the project directory, you can run:
+The main goal of the assignment was to utilize react to break the application's UI into components, manage state, and respond to user events.
 
-### `npm start`
+![Screen Shot 2020-08-19 at 6 20 05 PM](https://user-images.githubusercontent.com/61812035/90705791-9d221280-e248-11ea-85ed-4c3e4e13b8f0.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### See the game in action!
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+*Doodle Click* is deployed to Github Pages, click [here](https://ypangilinan.github.io/clicky-game/) to start playing or refer to the GIF below.
 
-### `npm test`
+This GIF displays when your memory fails you and you receive an F!
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Untitled_ Aug 19, 2020 6_21 PM](https://user-images.githubusercontent.com/61812035/90706014-1588d380-e249-11ea-86f8-1a85e711f932.gif)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How was this app created?
+The technologies used to create this app are:
+- HTML
+- JavaScript
+- React
+- [Tally Marks](https://www.npmjs.com/package/tally-marks)
+- [Create-React-App](https://github.com/facebook/create-react-app)
+- React-DOM
+- [GH-Pages](https://www.npmjs.com/package/gh-pages)
+- [React Animations](https://www.npmjs.com/package/react-animations)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Featured Feature!
+One feature that I was most excited about implementing was the tally marks used for keeping the points. This was created using the tally-marks NPM package listed above. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screen Shot 2020-08-19 at 6 22 17 PM](https://user-images.githubusercontent.com/61812035/90705938-eb371600-e248-11ea-9d73-b3d7ad048dce.png)
 
-### `npm run eject`
+## Want to run it locally?
+To install the application follow the instructions below:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+	git clone git@github.com:ypangilinan/news-scrape
+	cd clicky-game
+	npm install
+This should install the necessary packages from the Package.JSON needed for this application. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In the terminal,run the Node.js application with the command below.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+	npm start
+  
+The application will now be running locally on `PORT`, in this case that is port 3000. You can then access it locally from your browser at the URL `localhost:PORT`, in this case `localhost:3000`.  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Assignment Requirements
+### Create a new React application using Create React App:
+- [x] The application should render different images (of your choice) to the screen.
+  - [x] Each image should listen for click events.
+- [x] The application should keep track of the user's score. 
+  - [x] The user's score should be incremented when clicking an image for the first time. 
+  - [x] The user's score should be reset to 0 if they click the same image more than once.
+- [x] Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.
+- [x] Once the user's score is reset after an incorrect guess, the game should restart.
+- [x] When complete, the application should be deployed to Github Pages. 
+  - [x] See the README generated with Create React App for instructions on deploying the application to Github Pages.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  
